@@ -91,8 +91,8 @@ module.exports = {
     },
   },
   scripts: [
-    "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js",
-    {src:"/init.js", async: true, defer: true},
+    {src:"https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js", defer: true, async: true, },
+    {src:"/init.js", defer: true, async: true, },
   ],
   presets: [
     [
