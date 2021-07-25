@@ -1,7 +1,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const simplePlantUML = require("@akebifiky/remark-simple-plantuml");
-const mermaid = require("remark-mermaid-dataurl");
+// const mermaid = require("remark-mermaid-dataurl");
 const math = require('remark-math');
 const katex = require('rehype-katex');
 
@@ -97,7 +97,9 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/dinimicky/wiki',
-          remarkPlugins: [simplePlantUML, mermaid, math],
+          remarkPlugins: [simplePlantUML,
+            // mermaid,
+            math],
           rehypePlugins: [katex],
         },
         blog: {
