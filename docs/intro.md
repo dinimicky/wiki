@@ -35,10 +35,10 @@ class XX {
 ```
 <br/>
 
-<div class="mermaid">
+```mermaid
   graph LR
     Start --> Stop
-</div>
+```
 
 
 ```mermaid

@@ -99,7 +99,7 @@ module.exports = {
           editUrl:
             'https://github.com/dinimicky/wiki',
           remarkPlugins: [simplePlantUML,
-            // mermaid,
+            mermaid,
             math],
           rehypePlugins: [katex],
         },

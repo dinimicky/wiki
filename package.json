@@ -29,6 +29,7 @@
     "rehype-katex": "4",
     "remark-math": "3",
     "remark-mermaid": "^0.2.0",
+    "remark-mermaid-dataurl": "^1.0.2",
     "url-loader": "^4.1.1"
   },
   "browserslist": {
