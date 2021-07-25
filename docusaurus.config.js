@@ -92,7 +92,7 @@ module.exports = {
   },
   scripts: [
     "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js",
-    {src:"/init.js", async: true,},
+    {src:"/init.js", async: true, defer: true},
   ],
   presets: [
     [
