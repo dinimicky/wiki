@@ -6,6 +6,7 @@ const math = require('remark-math');
 const katex = require('rehype-katex');
 const mermaid = require("remark-mermaid");
 
+
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'My Site',
@@ -89,6 +90,9 @@ module.exports = {
       darkTheme: darkCodeTheme,
     },
   },
+  scripts: [
+    "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js",
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -99,7 +103,7 @@ module.exports = {
           editUrl:
             'https://github.com/dinimicky/wiki',
           remarkPlugins: [simplePlantUML,
-            mermaid,
+            [mermaid, { simple: true }],
             math],
           rehypePlugins: [katex],
         },
