@@ -35,6 +35,12 @@ class XX {
 ```
 <br/>
 
+<div class="mermaid">
+  graph LR
+    Start --> Stop
+</div>
+
+
 ```mermaid
 graph LR
     A[Hard edge] -->|Link text| B(Round edge)
