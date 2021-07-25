@@ -2,6 +2,8 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const simplePlantUML = require("@akebifiky/remark-simple-plantuml");
 const mermaid = require("remark-mermaid-dataurl");
+const math = require('remark-math');
+const katex = require('rehype-katex');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
@@ -28,7 +30,7 @@ module.exports = {
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -95,7 +97,8 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/dinimicky/wiki',
-            remarkPlugins: [simplePlantUML, mermaid],
+          remarkPlugins: [simplePlantUML, mermaid, math],
+          rehypePlugins: [katex],
         },
         blog: {
           showReadingTime: true,
@@ -108,5 +111,13 @@ module.exports = {
         },
       },
     ],
+  ],
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css',
+      integrity:
+        'sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc',
+      crossorigin: 'anonymous',
+    },
   ],
 };
