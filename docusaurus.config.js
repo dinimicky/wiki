@@ -1,6 +1,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const simplePlantUML = require("@akebifiky/remark-simple-plantuml");
+const mermaid = require("remark-mermaid-dataurl");
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
@@ -94,7 +95,7 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/dinimicky/wiki',
-            remarkPlugins: [simplePlantUML],
+            remarkPlugins: [simplePlantUML, mermaid],
         },
         blog: {
           showReadingTime: true,
