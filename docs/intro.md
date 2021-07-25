@@ -20,6 +20,12 @@ Generate a new Docusaurus site using the **classic template**:
 npx @docusaurus/init@latest init my-website classic
 ```
 
+```plantuml
+class XX {
+    + Interger yy
+}
+```
+
 ## Start your site
 
 Run the development server:
