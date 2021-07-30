@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+
+
 # Tutorial Intro
 
 Let's discover **Docusaurus in less than 5 minutes**.
@@ -40,6 +42,16 @@ class XX {
     Start --> Stop
 ```
 
+
+
+import Mermaid from '../src/theme/Mermaid';
+
+<Mermaid chart={`
+    graph LR;
+        A-->B;
+        B-->C;
+        B-->D[plop lanflz eknlzeknfz];
+`}/>
 
 ```mermaid
 graph LR
