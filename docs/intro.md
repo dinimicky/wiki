@@ -46,12 +46,7 @@ class XX {
 
 import Mermaid from '../src/theme/Mermaid';
 
-<Mermaid chart={`
-    graph LR;
-        A-->B;
-        B-->C;
-        B-->D[plop lanflz eknlzeknfz];
-`}/>
+<Mermaid />
 
 ```mermaid
 graph LR
