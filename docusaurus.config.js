@@ -4,7 +4,7 @@ const simplePlantUML = require("@akebifiky/remark-simple-plantuml");
 // const mermaid = require("remark-mermaid-dataurl");
 const math = require('remark-math');
 const katex = require('rehype-katex');
-const mermaid = require("remark-mermaid");
+const mermaid = require("remark-mermaid-dataurl");
 
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
