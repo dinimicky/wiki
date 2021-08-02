@@ -145,6 +145,7 @@ module.exports = {
 
   plugins: [
     // highligh-start
+    require.resolve('docusaurus-lunr-search'),
     function myPlugin(context, options) {
       // ...
       return {

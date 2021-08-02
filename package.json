@@ -21,6 +21,7 @@
     "@svgr/webpack": "^5.5.0",
     "chromium": "^3.0.2",
     "clsx": "^1.1.1",
+    "docusaurus-lunr-search": "^2.1.14",
     "file-loader": "^6.2.0",
     "hast-util-is-element": "1.1.0",
     "jsdoc-to-markdown": "^7.0.1",
